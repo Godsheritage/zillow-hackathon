@@ -1,8 +1,35 @@
+.home{
+    position: absolute;
+}
+
+.home-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top:200px;
+    // z-index:10;
+    left: 2rem;
+    h1{
+        font-size:1.2rem;
+        color: #fff;
+    }
+}
+
 .family-page{
-    height: 80vh;
-    width: 100%;
-    background-image: url('../shared/images/family.jpg');
+    position: fixed;
+    height: 85vh;
+    width: 100vw;
+    // background-image: url();
+    background: linear-gradient(
+        to right,
+        rgba(50, 70, 80, 0.7),
+        rgba(117, 115, 129, 0.7)
+      ),
+      url('../shared/images/family.jpg') no-repeat fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
