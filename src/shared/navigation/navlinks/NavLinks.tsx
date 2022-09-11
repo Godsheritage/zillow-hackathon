@@ -1,32 +1,29 @@
-import React from "react";
 import "./navlinks.scss";
-// import { useContext } from "react";
-import { NavLink } from "react-router-dom";
-// import AuthContext from "../../context/AuthContext";
-// import { contextTypes } from "../../../types";
-// import { contextTypes } from "../../types";
-// import AuthContext from "../context/AuthContext";
+import React from "react";
+import image from "../../../shared/logo.png";
 
-const NavLinks: React.FC<any> = ({ onClick }) => {
-  // const { isLoggedIn, logout } = useContext(AuthContext) as contextTypes;
+const NavLinks: React.FC<any> = () => {
   return (
-    <ul className="nav-links">
-      <li onClick={onClick}>
-        <NavLink to="/">Buy</NavLink>
-      </li>
-      <li onClick={onClick}>
-        <NavLink to="/">Rent</NavLink>
-      </li>
-      <li onClick={onClick}>
-        <NavLink to="/">Sell</NavLink>
-      </li>
-      <li onClick={onClick}>
-        <NavLink to="/">Home loans</NavLink>
-      </li>
-      <li>
-        <NavLink to="/">Agent Finder</NavLink>
-      </li>
-    </ul>
+    <div className="nav-bar">
+      <ul className="nav-links">
+        <li>Buy</li>
+        <li>Rent</li>
+        <li>Sell</li>
+        <li>Home loans</li>
+        <li>Rent Finder</li>
+      </ul>
+      <img
+        src={image}
+        alt="zillow-logo"
+        style={{ height: "5rem", width: "8rem" }}
+      />
+      <ul className="nav-links">
+        <li>Advertise</li>
+        <li>Manage Rentals</li>
+        <li>Help</li>
+        <li>Sign In</li>
+      </ul>
+    </div>
   );
 };
 

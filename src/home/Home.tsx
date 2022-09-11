@@ -1,10 +1,10 @@
 import "./home.scss";
-import MainHeader from "../shared/navigation/main header/MainHeader";
+import MainNavigation from "../shared/navigation/main navigation/MainNavigation";
 
 const Home = () => {
   return (
     <div>
-      <MainHeader />
+      <MainNavigation/>
     </div>
   );
 };
