@@ -1,39 +1,31 @@
 import React from "react";
-import './navlinks.scss'
-import { useContext } from "react";
+import "./navlinks.scss";
+// import { useContext } from "react";
 import { NavLink } from "react-router-dom";
-import AuthContext from "../../context/AuthContext";
-import { contextTypes } from "../../../types";
+// import AuthContext from "../../context/AuthContext";
+// import { contextTypes } from "../../../types";
 // import { contextTypes } from "../../types";
 // import AuthContext from "../context/AuthContext";
 
 const NavLinks: React.FC<any> = ({ onClick }) => {
-  const { isLoggedIn, logout } = useContext(AuthContext) as contextTypes;
+  // const { isLoggedIn, logout } = useContext(AuthContext) as contextTypes;
   return (
     <ul className="nav-links">
       <li onClick={onClick}>
-        <NavLink to="/">All users</NavLink>
+        <NavLink to="/">Buy</NavLink>
       </li>
-      {isLoggedIn && (
-        <li onClick={onClick}>
-          <NavLink to="/u1/places">my places</NavLink>
-        </li>
-      )}
-      {isLoggedIn && (
-        <li onClick={onClick}>
-          <NavLink to="/places/new">Add place</NavLink>
-        </li>
-      )}
-      {!isLoggedIn && (
-        <li onClick={onClick}>
-          <NavLink to="/auth">Authenticate</NavLink>
-        </li>
-      )}
-      {isLoggedIn && (
-        <li onClick={() => logout()}>
-          <NavLink to="/">Log Out</NavLink>
-        </li>
-      )}
+      <li onClick={onClick}>
+        <NavLink to="/">Rent</NavLink>
+      </li>
+      <li onClick={onClick}>
+        <NavLink to="/">Sell</NavLink>
+      </li>
+      <li onClick={onClick}>
+        <NavLink to="/">Home loans</NavLink>
+      </li>
+      <li>
+        <NavLink to="/">Agent Finder</NavLink>
+      </li>
     </ul>
   );
 };

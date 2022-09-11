@@ -1,10 +1,12 @@
-import './home.scss'
-
+import "./home.scss";
+import MainHeader from "../shared/navigation/main header/MainHeader";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      <MainHeader />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
