@@ -1,8 +1,8 @@
 import "./home.scss";
 import MainNavigation from "../shared/navigation/main navigation/MainNavigation";
-import family from "../shared/images/family.jpg";
 
 const Home = () => {
+  
   return (
     <div className="home">
       <MainNavigation />
@@ -13,7 +13,7 @@ const Home = () => {
             "Had a rough start to building credit? Try out Z-Save and grow your
             wallet to further qualify you for your dream home"
           </h1>
-          <button className="btn btn-primary">Try Z-Save!</button>
+          <button className="btn btn-primary btn-lg px-5 ">Try Z-Save!</button>
         </div>
       </div>
     </div>
