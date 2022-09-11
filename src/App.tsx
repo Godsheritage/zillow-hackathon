@@ -1,6 +1,9 @@
+import Home from "./home/Home"
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Home/>
+    </div>
   )
 }
 
