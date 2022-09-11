@@ -1,6 +1,6 @@
 import "./navlinks.scss";
 import React from "react";
-import image from "../../../shared/logo.png";
+import image from "../../../shared/images/logo.png";
 
 const NavLinks: React.FC<any> = () => {
   return (
