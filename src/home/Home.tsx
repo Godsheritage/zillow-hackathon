@@ -11,6 +11,7 @@ const Home = () => {
       <MainNavigation />
       <div>
         <div className="family-page"></div>
+        {/* login section */}
         {isLogin && (
           <div className="drawer">
             <h1>welcome to zillow</h1>
@@ -39,7 +40,7 @@ const Home = () => {
                 </button>
               </Link>
             )}
-
+            {/* Sign up */}
             {isSignUp && (
               <Link to="/zsave">
                 <button
@@ -54,6 +55,7 @@ const Home = () => {
           </div>
         )}
 
+        {/* Home section */}
         {!isLogin && (
           <div className=" home-text">
             <h1 className="pb-5">

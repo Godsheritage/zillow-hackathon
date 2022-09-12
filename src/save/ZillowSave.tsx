@@ -13,7 +13,7 @@ const ZillowSave = () => {
     <div>
       <MainNavigation />
       <div className="dashboard d-flex flex-column ">
-        <div className="dashboard-info mt-5">
+        <div className="dashboard-info">
           <h1 className="mb-3">Total Z-Save Amount</h1>
           <div className="dashboard-sub-info">
             <p className="h4" style={{ color: "#0B5ED7" }}>
@@ -28,14 +28,14 @@ const ZillowSave = () => {
         <div className="d-flex">
           <ul>
             {data.map((item, index) => (
-              <li className="h4" key={index}>
+              <li className="h5" key={index}>
                 {item.name}
               </li>
             ))}
           </ul>
           <ul>
             {data.map((item, index) => (
-              <li className="h4" key={index}>
+              <li className="h5" key={index}>
                 ${item.value}
               </li>
             ))}
@@ -43,6 +43,7 @@ const ZillowSave = () => {
         </div>
       </div>
       {/* flex boxes section */}
+
       <div className="stats-box">
         <div className="d-flex flex-column justify-content-center align-items-center">
           <img
@@ -67,8 +68,7 @@ const ZillowSave = () => {
           <p>25%</p>
         </div>
       </div>
-
-      <hr />
+      <hr className="my-3"/>
 
       {/* Carousel section */}
 
