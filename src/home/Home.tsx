@@ -1,7 +1,8 @@
 import "./home.scss";
-import MainNavigation from "../shared/navigation/main navigation/MainNavigation";
 import { useState } from "react";
-// import {Link} from "rea"
+import MainNavigation from "../shared/navigation/main navigation/MainNavigation";
+
+
 
 const Home = () => {
   const [isLogin, setIsLogin] = useState(false);
