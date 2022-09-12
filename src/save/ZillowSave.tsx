@@ -1,13 +1,9 @@
 import "./zillowSave.scss";
+import Chart from "../shared/chart/Chart";
 import MainNavigation from "../shared/navigation/main navigation/MainNavigation";
 
 const ZillowSave = () => {
-  const data = [
-    { name: "Principal and Interest", value: 1100 },
-    { name: "Home Insurance", value: 600 },
-    { name: "Taxes", value: 600 },
-    { name: "Mortgage Insurance", value: 200 },
-  ];
+
 
   return (
     <div>
@@ -23,6 +19,7 @@ const ZillowSave = () => {
           </div>
         </div>
       </div>
+      <Chart/>
     </div>
   );
 };
