@@ -1,3 +1,19 @@
-.dashboard{
-    
+.dashboard {
+  .dashboard-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dashboard-sub-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    h1{
+        
+    }
+    button{
+        // margin-left:3rem;
+    }
+  }
 }

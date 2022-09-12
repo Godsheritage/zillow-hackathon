@@ -1,5 +1,6 @@
 import "./navlinks.scss";
 import React from "react";
+import { Link } from "react-router-dom";
 import image from "../../../shared/images/logo.png";
 
 const NavLinks: React.FC<any> = () => {
@@ -12,11 +13,13 @@ const NavLinks: React.FC<any> = () => {
         <li>Home loans</li>
         <li>Rent Finder</li>
       </ul>
-      <img
-        src={image}
-        alt="zillow-logo"
-        style={{ height: "5rem", width: "8rem" }}
-      />
+      <Link to="/">
+        <img
+          src={image}
+          alt="zillow-logo"
+          style={{ height: "5rem", width: "8rem" }}
+        />
+      </Link>
       <ul className="nav-links">
         <li>Advertise</li>
         <li>Manage Rentals</li>
