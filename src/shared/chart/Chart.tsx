@@ -3,12 +3,11 @@ import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Cell } from "recharts";
 
 export const data = [
-  { name: "Principal and Interest", value: 1100 },
-  { name: "Home Insurance", value: 600 },
-  { name: "Taxes", value: 600 },
-  { name: "Mortgage Insurance", value: 200 },
+  { name: "Principal and Interest", value: 1100, color: "#0088FE" },
+  { name: "Home Insurance", value: 600, color: "#00C49F" },
+  { name: "Taxes", value: 600, color: "#FFBB28" },
+  { name: "Mortgage Insurance", value: 200, color: "#FF8042" },
 ];
-
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
 const RADIAN = Math.PI / 180;

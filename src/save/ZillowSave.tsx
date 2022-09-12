@@ -2,6 +2,7 @@ import "./zillowSave.scss";
 import Chart from "../shared/chart/Chart";
 import fireIcon from "../shared/images/fire.png";
 import calendarIcon from "../shared/images/calendar.png";
+import Bullet from "../shared/bullets/Bullet";
 import house1 from "../shared/images/house1.jpg";
 import house2 from "../shared/images/house2.jpg";
 import house3 from "../shared/images/house3.jpg";
@@ -9,6 +10,9 @@ import { data } from "../shared/chart/Chart";
 import MainNavigation from "../shared/navigation/main navigation/MainNavigation";
 
 const ZillowSave = () => {
+  //   const bulletColors = () => {
+  //     colors.map(() => )
+  //   };
   return (
     <div>
       <MainNavigation />
@@ -28,9 +32,12 @@ const ZillowSave = () => {
         <div className="d-flex">
           <ul>
             {data.map((item, index) => (
-              <li className="h5" key={index}>
-                {item.name}
-              </li>
+              <div className="d-flex align-items-center">
+                <Bullet color={item.color} />
+                <li className="h5 ps-2" key={index}>
+                  {item.name}
+                </li>
+              </div>
             ))}
           </ul>
           <ul>
@@ -68,7 +75,7 @@ const ZillowSave = () => {
           <p>25%</p>
         </div>
       </div>
-      <hr className="my-3"/>
+      <hr className="my-3" />
 
       {/* Carousel section */}
 
