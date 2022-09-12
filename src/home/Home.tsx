@@ -1,8 +1,7 @@
 import "./home.scss";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import MainNavigation from "../shared/navigation/main navigation/MainNavigation";
-
-
 
 const Home = () => {
   const [isLogin, setIsLogin] = useState(false);
@@ -31,11 +30,25 @@ const Home = () => {
               <input type="password" />
             </div>
             {!isSignUp && (
-              <button className="btn btn-primary px-5">Sign In</button>
+              <Link to="/zsave">
+                <button
+                  className="btn btn-primary px-5"
+                  style={{ color: "#fff", textDecoration: "none" }}
+                >
+                  Sign In
+                </button>
+              </Link>
             )}
 
             {isSignUp && (
-              <button className="btn btn-primary px-5">Create Account</button>
+              <Link to="/zsave">
+                <button
+                  className="btn btn-primary px-5"
+                  style={{ color: "#fff", textDecoration: "none" }}
+                >
+                  Create Account
+                </button>
+              </Link>
             )}
             <p>forgot password</p>
           </div>
