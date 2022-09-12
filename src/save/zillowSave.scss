@@ -23,6 +23,7 @@
 }
 
 
+// chart style section
 .chart-styles{
     display: flex;
     justify-content: space-around;
@@ -31,5 +32,21 @@
         li{
             font-size: 2rem  ;
         }
+    }
+}
+
+
+// stats box section
+.stats-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+    // justify-content: space-around;
+    // align-items: center;
+    div{
+        height: 15rem;
+        width: 17rem;
+        border-radius: 10px;
+        border: 1px solid rgb(82, 75, 75);
     }
 }
