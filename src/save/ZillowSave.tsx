@@ -20,7 +20,9 @@ const ZillowSave = () => {
         <div className="dashboard-info">
           <h1 className="mb-3">Total Z-Save Amount</h1>
           <div className="dashboard-sub-info">
-            <button className="btn btn-primary btn-1">Manage Accout</button>
+            <button className="btn btn-primary btn-1">
+              Mortgage Calculator
+            </button>
             <p className="h4" style={{ color: "#0B5ED7" }}>
               $20,000
             </p>
@@ -98,7 +100,7 @@ const ZillowSave = () => {
         </div>
         <div>
           <div className="d-flex justify-content-center align-items-center">
-            <p>25%</p>
+            <p>25</p>
           </div>
           <p
             className="h3 text-center"
