@@ -26,12 +26,12 @@ const ZillowSave = () => {
         <div className="d-flex">
           <ul>
             {data.map((item, index) => (
-              <li key={index}>{item.name}</li>
+              <li className="h4" key={index}>{item.name}</li>
             ))}
           </ul>
           <ul>
             {data.map((item, index) => (
-              <li key={index}>${item.value}</li>
+              <li  className="h4"  key={index}>${item.value}</li>
             ))}
           </ul>
         </div>
@@ -56,48 +56,8 @@ const ZillowSave = () => {
 
       {/* Carousel section */}
 
-      <h1>Potential Homes to check out based on your Z-save activity </h1>
-      <div
-        id="carouselExampleControls"
-        className="carousel slide"
-        data-ride="carousel"
-      >
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img className="d-block w-100" style={{height:'30rem', width:'30rem'}} src={house1} alt="First slide"></img>
-          </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src={house2} alt="Second slide"></img>
-          </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src={house3} alt="Third slide"></img>
-          </div>
-        </div>
-        <a
-          className="carousel-control-prev"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="sr-only">Previous</span>
-        </a>
-        <a
-          className="carousel-control-next"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="sr-only">Next</span>
-        </a>
-      </div>
+      <h1 className="h4 text-center">Potential Homes to check out based on your Z-save activity </h1>
+
     </div>
   );
 };
