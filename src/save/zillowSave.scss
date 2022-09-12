@@ -2,18 +2,34 @@
   .dashboard-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    h1 {
+      font-size: 1.1rem;
+    }
+    .dashboard-sub-info {
+      display: flex;
+      flex-direction: row;
+      p {
+        margin-left: 58px;
+      }
+      h1 {
+      }
+      button {
+        position: relative;
+        left: 100px;
+      }
+    }
   }
-  .dashboard-sub-info{
+}
+
+
+.chart-styles{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    h1{
-        
+    align-items: center;
+    ul{
+        li{
+            font-size: 2rem  ;
+        }
     }
-    button{
-        // margin-left:3rem;
-    }
-  }
 }

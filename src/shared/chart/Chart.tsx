@@ -2,7 +2,7 @@ import "./chart.scss";
 import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Cell } from "recharts";
 
-const data = [
+export const data = [
   { name: "Principal and Interest", value: 1100 },
   { name: "Home Insurance", value: 600 },
   { name: "Taxes", value: 600 },
@@ -46,7 +46,7 @@ const Chart = () => {
         cy={200}
         labelLine={false}
         label={renderCustomizedLabel}
-        outerRadius={80}
+        outerRadius={140}
         fill="#8884d8"
         dataKey="value"
       >
