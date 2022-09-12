@@ -64,14 +64,14 @@ const ZillowSave = () => {
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="img-fluid" src={house1} alt="First slide"></img>
+            <img className="d-block w-100" style={{height:'30rem', width:'30rem'}} src={house1} alt="First slide"></img>
           </div>
-          {/* <div className="carousel-item">
+          <div className="carousel-item">
             <img className="d-block w-100" src={house2} alt="Second slide"></img>
           </div>
           <div className="carousel-item">
             <img className="d-block w-100" src={house3} alt="Third slide"></img>
-          </div> */}
+          </div>
         </div>
         <a
           className="carousel-control-prev"
