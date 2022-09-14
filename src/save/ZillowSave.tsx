@@ -3,11 +3,9 @@ import Chart from "../shared/chart/Chart";
 import fireIcon from "../shared/images/fire.png";
 import calendarIcon from "../shared/images/calendar.png";
 import Bullet from "../shared/bullets/Bullet";
-import house1 from "../shared/images/house1.jpg";
-import house2 from "../shared/images/house2.jpg";
-import house3 from "../shared/images/house3.jpg";
 import { data } from "../shared/chart/Chart";
 import MainNavigation from "../shared/navigation/main navigation/MainNavigation";
+import DemoCarousel from "../shared/carousel/Carousel";
 
 const ZillowSave = () => {
   //   const bulletColors = () => {
@@ -110,10 +108,10 @@ const ZillowSave = () => {
           </p>
         </div>
       </div>
-      <hr className="" />
+      <hr />
 
       {/* Carousel section */}
-      <div className="mb-5">
+      {/* <div className="mb-5">
         <h1 className="h4 text-center">
           Potential Homes to check out based on your Z-save activity{" "}
         </h1>
@@ -152,6 +150,7 @@ const ZillowSave = () => {
                 style={{ height: "30rem", width: "30rem" }}
                 alt="..."
               ></img>
+              <p className="h1">Hello</p>
             </div>
             <div className="carousel-item">
               <img
@@ -195,7 +194,11 @@ const ZillowSave = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-      </div>
+      </div> */}
+      <h1 className="h4 text-center mb-4">
+        Potential Homes to check out based on your Z-save activity{" "}
+      </h1>
+      <DemoCarousel />
     </div>
   );
 };
