@@ -1,16 +1,14 @@
 import "./zillowSave.scss";
+import { Link } from "react-router-dom";
 import Chart from "../shared/chart/Chart";
-import fireIcon from "../shared/images/fire.png";
-import calendarIcon from "../shared/images/calendar.png";
 import Bullet from "../shared/bullets/Bullet";
 import { data } from "../shared/chart/Chart";
-import MainNavigation from "../shared/navigation/main navigation/MainNavigation";
+import fireIcon from "../shared/images/fire.png";
 import DemoCarousel from "../shared/carousel/Carousel";
+import calendarIcon from "../shared/images/calendar.png";
+import MainNavigation from "../shared/navigation/main navigation/MainNavigation";
 
 const ZillowSave = () => {
-  //   const bulletColors = () => {
-  //     colors.map(() => )
-  //   };
   return (
     <div>
       <MainNavigation />
@@ -24,7 +22,10 @@ const ZillowSave = () => {
             <p className="h4" style={{ color: "#0B5ED7" }}>
               $20,000
             </p>
+            <Link to='/account'>
+            
             <button className="btn btn-primary btn-2">Manage Account</button>
+            </Link>
           </div>
         </div>
       </div>
