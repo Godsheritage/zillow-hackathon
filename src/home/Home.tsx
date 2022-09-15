@@ -6,8 +6,8 @@ import MainNavigation from "../shared/navigation/main navigation/MainNavigation"
 import { contextTypes } from "../types";
 
 const Home = () => {
-  const { setIsLoggedIn } = useContext(ZillowContext) as contextTypes;
-  const [isLogin, setIsLogin] = useState(false);
+  const { setIsLoggedIn, isLogin, setIsLogin } = useContext(ZillowContext) as contextTypes;
+  
   const [isSignUp, setIsSignUp] = useState(false);
   return (
     <div className="home">

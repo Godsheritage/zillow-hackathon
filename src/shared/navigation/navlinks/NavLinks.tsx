@@ -1,9 +1,13 @@
 import "./navlinks.scss";
-import React from "react";
 import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { contextTypes } from "../../../types";
+import userImg from "../../../shared/images/me.jpg";
 import image from "../../../shared/images/logo.png";
+import ZillowContext from "../../context/ZillowContext";
 
 const NavLinks: React.FC<any> = () => {
+  const { isLoggedIn, setIsLogin } = useContext(ZillowContext) as contextTypes;
   return (
     <div className="nav-bar">
       <ul className="nav-links">
@@ -24,8 +28,23 @@ const NavLinks: React.FC<any> = () => {
         <li>Advertise</li>
         <li>Manage Rentals</li>
         <li>Help</li>
-        {}
-        <li>Sign In</li>
+        {!isLoggedIn ? (
+          <li
+          style={{cursor:'pointer'}}
+            onClick={() => {
+              setIsLogin(true);
+            }}
+          >
+            Sign In
+          </li>
+        ) : (
+          <img
+            src={userImg}
+            alt="userPic"
+            style={{ height: "22px", width: "22px", borderRadius: "50%" }}
+            className="mx-3"
+          ></img>
+        )}
       </ul>
     </div>
   );
