@@ -4,9 +4,10 @@ import Chart from "../shared/chart/Chart";
 import Bullet from "../shared/bullets/Bullet";
 import { data } from "../shared/chart/Chart";
 import fireIcon from "../shared/images/fire.png";
+import graphIcon from "../shared/images/graph.png";
 import DemoCarousel from "../shared/carousel/Carousel";
 import calendarIcon from "../shared/images/calendar.png";
-import graphIcon from "../shared/images/graph.png";
+import ZsaveIcon from "../shared/images/ZLogo.png";
 import MainNavigation from "../shared/navigation/main navigation/MainNavigation";
 
 const ZillowSave = () => {
@@ -106,7 +107,12 @@ const ZillowSave = () => {
           </p>
         </div>
         <div>
-          <div className="d-flex justify-content-center align-items-center">
+          <div className="d-flex flex-column justify-content-center align-items-center">
+            <img
+              src={ZsaveIcon}
+              alt="fire icon"
+              style={{ height: "3rem", width: "3rem" }}
+            />
             <p>25</p>
           </div>
           <p
