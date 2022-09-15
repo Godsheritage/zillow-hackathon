@@ -1,9 +1,12 @@
 import "./home.scss";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import ZillowContext from "../shared/context/ZillowContext";
 import MainNavigation from "../shared/navigation/main navigation/MainNavigation";
+import { contextTypes } from "../types";
 
 const Home = () => {
+  const { setIsLoggedIn } = useContext(ZillowContext) as contextTypes;
   const [isLogin, setIsLogin] = useState(false);
   const [isSignUp, setIsSignUp] = useState(false);
   return (
@@ -35,6 +38,7 @@ const Home = () => {
                 <button
                   className="btn btn-primary px-5"
                   style={{ color: "#fff", textDecoration: "none" }}
+                  onClick={() => setIsLoggedIn(true)}
                 >
                   Sign In
                 </button>
@@ -46,6 +50,7 @@ const Home = () => {
                 <button
                   className="btn btn-primary px-5"
                   style={{ color: "#fff", textDecoration: "none" }}
+                  onClick={() => setIsLoggedIn(true)}
                 >
                   Create Account
                 </button>

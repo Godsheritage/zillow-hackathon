@@ -24,6 +24,7 @@ const NavLinks: React.FC<any> = () => {
         <li>Advertise</li>
         <li>Manage Rentals</li>
         <li>Help</li>
+        {}
         <li>Sign In</li>
       </ul>
     </div>
