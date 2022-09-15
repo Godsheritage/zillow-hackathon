@@ -65,7 +65,7 @@ const ZillowSave = () => {
             <p>8 Months</p>
           </div>
           <p
-            className="h3 text-center"
+            className="h3 text-center mt-2"
             style={{ color: "black", fontSize: "18px" }}
           >
             Deposit Streak
@@ -76,7 +76,7 @@ const ZillowSave = () => {
             <p>1%</p>
           </div>
           <p
-            className="h3 text-center"
+            className="h3 text-center mt-2"
             style={{ color: "black", fontSize: "18px" }}
           >
             Qualified Percentage for cashbacks
@@ -92,7 +92,7 @@ const ZillowSave = () => {
             <p>Sept 3rd</p>
           </div>
           <p
-            className="h3 text-center"
+            className="h3 text-center mt-2"
             style={{ color: "black", fontSize: "18px" }}
           >
             Next deposit date
@@ -103,7 +103,7 @@ const ZillowSave = () => {
             <p>25</p>
           </div>
           <p
-            className="h3 text-center"
+            className="h3 text-center mt-2"
             style={{ color: "black", fontSize: "18px" }}
           >
             Z-Score
@@ -113,90 +113,6 @@ const ZillowSave = () => {
       <hr />
 
       {/* Carousel section */}
-      {/* <div className="mb-5">
-        <h1 className="h4 text-center">
-          Potential Homes to check out based on your Z-save activity{" "}
-        </h1>
-        <div
-          id="carouselExampleIndicators"
-          className="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div className="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              className="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img
-                src={house1}
-                className="d-block w-100 img-fluid "
-                style={{ height: "30rem", width: "30rem" }}
-                alt="..."
-              ></img>
-              <p className="h1">Hello</p>
-            </div>
-            <div className="carousel-item">
-              <img
-                src={house2}
-                className="d-block w-100 img-fluid "
-                style={{ height: "30rem", width: "30rem" }}
-                alt="..."
-              ></img>
-            </div>
-            <div className="carousel-item">
-              <img
-                src={house3}
-                className="d-block w-100 img-fluid "
-                style={{ height: "30rem", width: "30rem" }}
-                alt="..."
-              ></img>
-            </div>
-          </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div> */}
       <h1 className="h4 text-center mb-4">
         Potential Homes to check out based on your Z-save activity{" "}
       </h1>
