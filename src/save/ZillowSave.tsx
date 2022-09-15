@@ -55,7 +55,7 @@ const ZillowSave = () => {
         </div>
       </div>
 
-      {/* STAT BOX SECTIONS */}
+      {/* STATS BOX SECTIONS */}
 
       <div className="stats-box ">
         <div>
