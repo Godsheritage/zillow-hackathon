@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./carousel.scss";
-import ReactDOM from "react-dom";
 import house1 from "../../shared/images/house1.jpg";
 import house2 from "../../shared/images/house2.jpg";
 import house3 from "../../shared/images/house3.jpg";
@@ -23,10 +22,6 @@ class DemoCarousel extends Component {
           <img src={house3} alt="houses" />
           <p className="legend img-txt" style={{}}> Candidacy: Strong Candidate</p>
         </div>
-        {/* <div>
-          <img src={house3} alt="houses" />
-          <p className="legend img-txt">Candidacy Strong Candidate</p>
-        </div>
         <div>
           <img src={house3} alt="houses" />
           <p className="legend img-txt">Candidacy Strong Candidate</p>
@@ -34,7 +29,11 @@ class DemoCarousel extends Component {
         <div>
           <img src={house3} alt="houses" />
           <p className="legend img-txt">Candidacy Strong Candidate</p>
-        </div> */}
+        </div>
+        <div>
+          <img src={house3} alt="houses" />
+          <p className="legend img-txt">Candidacy Strong Candidate</p>
+        </div>
       </Carousel>
     );
   }

@@ -6,6 +6,7 @@ import { data } from "../shared/chart/Chart";
 import fireIcon from "../shared/images/fire.png";
 import DemoCarousel from "../shared/carousel/Carousel";
 import calendarIcon from "../shared/images/calendar.png";
+import graphIcon from "../shared/images/graph.png";
 import MainNavigation from "../shared/navigation/main navigation/MainNavigation";
 
 const ZillowSave = () => {
@@ -52,7 +53,8 @@ const ZillowSave = () => {
           </ul>
         </div>
       </div>
-      {/* flex boxes section */}
+
+      {/* STAT BOX SECTIONS */}
 
       <div className="stats-box ">
         <div>
@@ -72,7 +74,12 @@ const ZillowSave = () => {
           </p>
         </div>
         <div>
-          <div className="d-flex justify-content-center align-items-center">
+          <div className="d-flex flex-column justify-content-center align-items-center">
+            <img
+              src={graphIcon}
+              alt="graph icon"
+              style={{ height: "3rem", width: "3rem" }}
+            />
             <p>1%</p>
           </div>
           <p
@@ -112,7 +119,7 @@ const ZillowSave = () => {
       </div>
       <hr />
 
-      {/* Carousel section */}
+      {/* CAROUSEL SSECTIONS*/}
       <h1 className="h4 text-center mb-4">
         Potential Homes to check out based on your Z-save activity{" "}
       </h1>
