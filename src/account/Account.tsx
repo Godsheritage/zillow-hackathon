@@ -1,9 +1,12 @@
-import './account.scss'
+import "./account.scss";
+import MainNavigation from "../shared/navigation/main navigation/MainNavigation";
 
 const Account = () => {
   return (
-    <div>Account</div>
-  )
-}
+    <div>
+      <MainNavigation />
+    </div>
+  );
+};
 
-export default Account
+export default Account;
