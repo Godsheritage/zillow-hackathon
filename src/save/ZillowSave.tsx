@@ -17,14 +17,15 @@ const ZillowSave = () => {
           <h1 className="mb-3">Total Z-Save Amount</h1>
           <div className="dashboard-sub-info">
             <button className="btn btn-primary btn-1">
-              Mortgage Calculator
+              <a href="https://www.zillow.com/mortgage-calculator/">
+                Mortgage Calculator
+              </a>
             </button>
             <p className="h4" style={{ color: "#0B5ED7" }}>
               $20,000
             </p>
-            <Link to='/account'>
-            
-            <button className="btn btn-primary btn-2">Manage Account</button>
+            <Link to="/account">
+              <button className="btn btn-primary btn-2">Manage Account</button>
             </Link>
           </div>
         </div>
