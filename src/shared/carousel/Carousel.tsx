@@ -46,7 +46,7 @@ class DemoCarousel extends Component {
           <p className="legend img-txt">Candidacy Strong Candidate</p>
         </div>
         <div>
-          <img src={house3} alt="houses" />
+          <img src='https://images.unsplash.com/photo-1598228723793-52759bba239c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80' alt="houses" />
           <p className="legend img-txt">Candidacy Strong Candidate</p>
         </div>
       </Carousel>
