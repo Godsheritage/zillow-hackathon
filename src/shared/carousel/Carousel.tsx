@@ -18,7 +18,10 @@ class DemoCarousel extends Component {
           </p>
         </div>
         <div>
-          <img src={house2} alt="houses" />
+          <img
+            src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="houses"
+          />
           <p className="legend img-txt" style={{}}>
             {" "}
             Candidacy: Strong Candidate
@@ -32,7 +35,10 @@ class DemoCarousel extends Component {
           </p>
         </div>
         <div>
-          <img src={house3} alt="houses" />
+          <img
+            src="https://images.unsplash.com/photo-1576941089067-2de3c901e126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1278&q=80"
+            alt="houses"
+          />
           <p className="legend img-txt">Candidacy Strong Candidate</p>
         </div>
         <div>
