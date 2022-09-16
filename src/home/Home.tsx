@@ -1,9 +1,9 @@
 import "./home.scss";
-import { useState, useContext } from "react";
+import { contextTypes } from "../types";
 import { Link } from "react-router-dom";
+import { useState, useContext } from "react";
 import ZillowContext from "../shared/context/ZillowContext";
 import MainNavigation from "../shared/navigation/main navigation/MainNavigation";
-import { contextTypes } from "../types";
 
 const Home = () => {
   const { setIsLoggedIn, isLogin, setIsLogin } = useContext(ZillowContext) as contextTypes;
