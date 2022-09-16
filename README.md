@@ -1,3 +1,10 @@
+This is a REACT SPA built by the zillowBears
+Developed by Godsheritage
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
