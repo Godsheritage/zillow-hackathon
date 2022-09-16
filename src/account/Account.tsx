@@ -25,7 +25,7 @@ const Account = () => {
             </h5>
             <h5>
               <strong>Location:</strong>
-              <span style={{ marginLeft: "2rem" }}>Chicago </span>
+              <span style={{ marginLeft: "2rem" }}>Chicago, IL</span>
             </h5>
           </div>
         </div>
@@ -35,20 +35,25 @@ const Account = () => {
           </h4>
           <div className="d-flex justify-content-evenly">
             <div className="d-flex flex-column align-content-center">
-              <input type="text" />
-              <input type="text" />
-              <input type="text" />
+              <input value="Expenses" type="text" className="my-3" />
+              <input value="Expenses" type="text" className="my-3" />
+              <input value="Expenses" type="text" className="my-3" />
             </div>
             <div className="d-flex flex-column">
-              <input type="text" />
-              <input type="text" />
-              <input type="text" />
+              <input type="text" className="my-3" placeholder="$" />
+              <input type="text" className="my-3" placeholder="$" />
+              <input type="text" className="my-3" placeholder="$" />
             </div>
           </div>
         </div>
 
         <div className="d-flex justify-content-center">
-          <img src={payImg} style={{height:'40px', width:'200px'}} alt="apple-pay-img" className="my-5" />
+          <img
+            src={payImg}
+            style={{ height: "40px", width: "200px" }}
+            alt="apple-pay-img"
+            className="my-5"
+          />
         </div>
       </div>
     </>

@@ -2,6 +2,8 @@ import "./carousel.scss";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+//Carousel Information
+
 const DemoCarousel: React.FC = () => {
   const housesInfo = [
     {
