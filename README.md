@@ -1,7 +1,7 @@
-This is a REACT SPA built by the zillowBears
-Developed by Godsheritage
+This is a REACT SPA built by the zillowBears Developed by Godsheritage <br/>
 Deployed at: https://zillowbears-3kwkqnilt-godsheritage.vercel.app/
 
+Link to the repository of the mobile version: https://github.com/Fangeez/Zillow-HBCU-Hackathon-iOS
 
 
 
